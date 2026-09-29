@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Gayatri ♥ Ayyappa | Our Story</title>
+
+
+<style>
+
+/* =====================================================
+   VINTAGE LOVE LETTER
+   GAYATRI ♥ AYYAPPA
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #fff8e7,
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            #ead7c5,
+            transparent 35%
+        ),
+        #efe0c7;
+
+    color: #4a2d25;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   OLD PAPER EFFECT
+===================================================== */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    opacity: 0.16;
+
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 3px,
+            #7b5b45 4px
+        );
+
+    z-index: 999;
+}
+
+
+/* =====================================================
+   FLOATING MINI HEARTS
+===================================================== */
+
+.floating {
+
+    position: fixed;
+
+    bottom: -50px;
+
+    color: #9b3d42;
+
+    font-size: 18px;
+
+    animation:
+        floatUp 9s linear infinite;
+
+    z-index: 1;
+
+    opacity: 0.45;
+}
+
+
+.f1 {
+    left: 8%;
+    animation-delay: 0s;
+}
+
+.f2 {
+    left: 25%;
+    animation-delay: 3s;
+}
+
+.f3 {
+    left: 45%;
+    animation-delay: 1s;
+}
+
+.f4 {
+    left: 68%;
+    animation-delay: 4s;
+}
+
+.f5 {
+    left: 88%;
+    animation-delay: 2s;
+}
+
+
+@keyframes floatUp {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    position: relative;
+}
+
+
+.small-date {
+
+    font-size: 14px;
+
+    letter-spacing: 5px;
+
+    color: #8a6254;
+
+    animation:
+        fadeDown 1.5s ease;
+}
+
+
+.hero h1 {
+
+    margin-top: 20px;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size:
+        clamp(65px, 13vw, 130px);
+
+    color: #72343b;
+
+    font-weight: 700;
+
+    line-height: 0.9;
+
+    text-shadow:
+        2px 3px 0 #d9bca1;
+
+    animation:
+        titleReveal 2s ease;
+}
+
+
+.hero .and {
+
+    margin: 20px 0;
+
+    font-size: 30px;
+
+    color: #a05a55;
+
+    animation:
+        heartbeat 1.5s infinite;
+}
+
+
+.subtitle {
+
+    font-size: 21px;
+
+    font-style: italic;
+
+    color: #795548;
+
+    margin-top: 25px;
+}
+
+
+/* =====================================================
+   VINTAGE ORNAMENT
+===================================================== */
+
+.ornament {
+
+    margin: 30px auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #9b6a58;
+
+}
+
+
+.ornament::before,
+.ornament::after {
+
+    content: "";
+
+    width: 80px;
+
+    height: 1px;
+
+    background: #a87c67;
+}
+
+
+.ornament span {
+
+    font-size: 20px;
+
+    color: #8f3f46;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.open-btn {
+
+    margin-top: 30px;
+
+    padding: 15px 32px;
+
+    border-radius: 50px;
+
+    border:
+        1px solid #8e4c4c;
+
+    background: #7b383e;
+
+    color: #fff5e8;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 0 #54272c,
+        0 12px 25px #6b3a3a44;
+
+    transition: 0.25s;
+}
+
+
+.open-btn:hover {
+
+    transform:
+        translateY(4px);
+
+    box-shadow:
+        0 3px 0 #54272c,
+        0 8px 18px #6b3a3a44;
+}
+
+
+/* =====================================================
+   STORY
+===================================================== */
+
+.story {
+
+    display: none;
+
+    max-width: 950px;
+
+    margin: auto;
+
+    padding: 30px 20px 100px;
+
+    animation:
+        storyReveal 1.5s ease;
+}
+
+
+/* =====================================================
+   VINTAGE CARD
+===================================================== */
+
+.paper {
+
+    background:
+        linear-gradient(
+            145deg,
+            #fff9ea,
+            #f5e6cf
+        );
+
+    padding:
+        clamp(30px, 7vw, 65px);
+
+    margin: 40px 0;
+
+    position: relative;
+
+    border:
+        1px solid #d7b99e;
+
+    box-shadow:
+        0 15px 40px #6d49331f;
+
+    transform:
+        rotate(-0.5deg);
+}
+
+
+.paper::before {
+
+    content: "♡";
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    font-size: 30px;
+
+    color: #a04c53;
+}
+
+
+.paper::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 15px;
+
+    left: 20px;
+
+    font-size: 20px;
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.intro {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+.intro .tiny {
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: #9a6d5c;
+}
+
+
+.intro h2 {
+
+    margin-top: 15px;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size: 55px;
+
+    color: #72343b;
+}
+
+
+/* =====================================================
+   MINI VINTAGE ILLUSTRATIONS
+===================================================== */
+
+.mini-icons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin: 35px 0;
+}
+
+
+.mini {
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ead1b9;
+
+    border:
+        1px solid #bd967c;
+
+    font-size: 27px;
+
+    box-shadow:
+        0 4px 0 #c5a086;
+
+    transition: 0.3s;
+}
+
+
+.mini:hover {
+
+    transform:
+        translateY(-7px)
+        rotate(-8deg);
+}
+
+
+/* =====================================================
+   COUNTER
+===================================================== */
+
+.counter {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin: 45px 0;
+}
+
+
+.counter-box {
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    border:
+        1px solid #d5b59b;
+
+    background: #f7e9d5;
+}
+
+
+.counter-box strong {
+
+    display: block;
+
+    font-size: 40px;
+
+    color: #803d43;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+}
+
+
+.counter-box span {
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #89695a;
+}
+
+
+/* =====================================================
+   LETTER
+===================================================== */
+
+.letter {
+
+    font-size: 19px;
+
+    line-height: 1.9;
+
+    color: #56382f;
+}
+
+
+.letter p {
+
+    margin-bottom: 22px;
+}
+
+
+.dear {
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size: 30px;
+
+    color: #803d43;
+}
+
+
+.highlight {
+
+    color: #8d3d45;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   QUOTE
+===================================================== */
+
+.quote {
+
+    margin: 45px 0;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-top:
+        1px solid #c7a38a;
+
+    border-bottom:
+        1px solid #c7a38a;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size: 30px;
+
+    color: #713b40;
+}
+
+
+/* =====================================================
+   TIMELINE
+===================================================== */
+
+.timeline {
+
+    margin-top: 60px;
+}
+
+
+.timeline-title {
+
+    text-align: center;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size: 42px;
+
+    color: #713b40;
+
+    margin-bottom: 35px;
+}
+
+
+.timeline-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin: 25px 0;
+}
+
+
+.timeline-dot {
+
+    min-width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #7b383e;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+}
+
+
+.timeline-text {
+
+    padding: 15px 20px;
+
+    background: #f2dfc7;
+
+    border-left:
+        3px solid #93484e;
+
+    flex: 1;
+}
+
+
+/* =====================================================
+   FINAL LOVE
+===================================================== */
+
+.final-love {
+
+    margin-top: 80px;
+
+    padding: 70px 25px;
+
+    text-align: center;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            145deg,
+            #78383e,
+            #51282d
+        );
+
+    color: white;
+
+    box-shadow:
+        0 25px 50px #54272c55;
+
+    overflow: hidden;
+}
+
+
+.final-love::before {
+
+    content: "✦";
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 25px;
+
+    font-size: 25px;
+
+    color: #e6c7a9;
+}
+
+
+.final-love::after {
+
+    content: "✦";
+
+    position: absolute;
+
+    bottom: 20px;
+
+    right: 25px;
+
+    font-size: 25px;
+
+    color: #e6c7a9;
+}
+
+
+.big-heart {
+
+    font-size: 65px;
+
+    animation:
+        heartbeat 1.3s infinite;
+}
+
+
+.final-love h2 {
+
+    margin-top: 20px;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size:
+        clamp(38px, 8vw, 75px);
+
+    color: #ffe4d0;
+
+    text-shadow:
+        0 0 20px #ffb3a455;
+}
+
+
+.final-love p {
+
+    margin-top: 15px;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size: 35px;
+
+    color: #f4c9b3;
+}
+
+
+.forever {
+
+    margin-top: 20px;
+
+    font-size: 13px;
+
+    letter-spacing: 5px;
+
+    color: #d9b3a2;
+}
+
+
+/* =====================================================
+   SIGNATURE
+===================================================== */
+
+.signature {
+
+    margin-top: 45px;
+
+    text-align: right;
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-size: 30px;
+
+    color: #713b40;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    color: #8b6859;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes titleReveal {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(30px)
+            scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+@keyframes fadeDown {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0);
+    }
+}
+
+
+@keyframes storyReveal {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0);
+    }
+}
+
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width: 650px) {
+
+    .hero h1 {
+        font-size: 65px;
+    }
+
+    .counter {
+        grid-template-columns: 1fr;
+    }
+
+    .mini-icons {
+        gap: 12px;
+    }
+
+    .mini {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .letter {
+        font-size: 17px;
+    }
+
+    .timeline-item {
+        align-items: flex-start;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- FLOATING HEARTS -->
+
+<div class="floating f1">♥</div>
+<div class="floating f2">♡</div>
+<div class="floating f3">♥</div>
+<div class="floating f4">♡</div>
+<div class="floating f5">♥</div>
+
+
+<!-- =================================================
+     HERO
+================================================= -->
+
+<section class="hero">
+
+    <div class="small-date">
+        29 • 09 • 2025
+    </div>
+
+
+    <h1>
+        Gayatri
+    </h1>
+
+
+    <div class="and">
+        ♡ & ♡
+    </div>
+
+
+    <h1>
+        Ayyappa
+    </h1>
+
+
+    <div class="ornament">
+        <span>♥</span>
+    </div>
+
+
+    <p class="subtitle">
+        One date. One story. One beautiful us.
+    </p>
+
+
+    <button
+        class="open-btn"
+        onclick="openStory()">
+
+        Open Our Little Story ♥
+    </button>
+
+</section>
+
+
+
+<!-- =================================================
+     STORY
+================================================= -->
+
+<section
+    class="story"
+    id="story">
+
+
+    <!-- INTRO CARD -->
+
+    <div class="paper">
+
+        <div class="intro">
+
+            <div class="tiny">
+                Our little universe
+            </div>
+
+            <h2>
+                It all started here...
+            </h2>
+
+
+            <div class="mini-icons">
+
+                <div class="mini">
+                    🌹
+                </div>
+
+                <div class="mini">
+                    💌
+                </div>
+
+                <div class="mini">
+                    ☕
+                </div>
+
+                <div class="mini">
+                    🌙
+                </div>
+
+                <div class="mini">
+                    ♡
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COUNTER -->
+
+        <div class="counter">
+
+            <div class="counter-box">
+
+                <strong>365</strong>
+
+                <span>
+                    DAYS
+                </span>
+
+            </div>
+
+
+            <div class="counter-box">
+
+                <strong>12</strong>
+
+                <span>
+                    MONTHS
+                </span>
+
+            </div>
+
+
+            <div class="counter-box">
+
+                <strong>∞</strong>
+
+                <span>
+                    MEMORIES
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- LETTER -->
+
+        <div class="letter">
+
+            <p class="dear">
+                Dear Abhi,
+            </p>
+
+
+            <p>
+                Sometimes life gives us moments that look
+                completely ordinary when they happen...
+                but later, we realize they were actually
+                the beginning of something beautiful.
+            </p>
+
+
+            <p>
+                For me, that moment was
+                <span class="highlight">
+                    29 September 2025.
+                </span>
+            </p>
+
+
+            <p>
+                I didn't know that a simple beginning would
+                turn into <span class="highlight">
+                one whole year of us.</span>
+            </p>
+
+
+            <p>
+                One year of conversations,
+                random laughs, silly arguments,
+                late talks, little moments,
+                and memories that somehow became
+                some of my favorite parts of life.
+            </p>
+
+
+            <p>
+                Somewhere between all those conversations,
+                you became more than just a person in my life.
+                You became someone I genuinely look forward to,
+                someone whose presence can make an ordinary
+                day feel a little more special.
+            </p>
+
+
+            <div class="quote">
+
+                "Among all the ordinary days,
+                you became my favorite one."
+                ♥
+            </div>
+
+
+            <p>
+                I know I may not always say everything
+                perfectly. Sometimes I may not even know
+                how to put everything I feel into words.
+            </p>
+
+
+            <p>
+                But if there is one thing I want you to know,
+                it is this:
+                <span class="highlight">
+                you are incredibly special to me.</span>
+            </p>
+
+
+            <p>
+                If I could go back to
+                <span class="highlight">
+                29/09/2025</span>
+                and see where that little beginning
+                would take us...
+            </p>
+
+
+            <p>
+                I would still choose it.
+                I would still choose you.
+                And I would still want to know
+                where our story goes next.
+            </p>
+
+
+        </div>
+
+
+        <!-- TIMELINE -->
+
+        <div class="timeline">
+
+            <h2 class="timeline-title">
+                Little Things I Love About Us
+            </h2>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+                    ♥
+                </div>
+
+                <div class="timeline-text">
+                    The random conversations
+                    that somehow become hours.
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+                    ✦
+                </div>
+
+                <div class="timeline-text">
+                    The little moments that
+                    nobody else would understand.
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+                    ♡
+                </div>
+
+                <div class="timeline-text">
+                    The smiles, the teasing,
+                    the silly moments and everything between.
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">
+                    ∞
+                </div>
+
+                <div class="timeline-text">
+                    And most importantly...
+                    simply being "us".
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FINAL -->
+
+        <div class="final-love">
+
+            <div class="big-heart">
+                ❤️
+            </div>
+
+
+            <h2>
+                I LOVE YOU SO MUCH
+            </h2>
+
+
+            <p>
+                Bangarukonda ❤️
+            </p>
+
+
+            <div class="forever">
+                TODAY • TOMORROW • ALWAYS
+            </div>
+
+        </div>
+
+
+        <!-- SIGNATURE -->
+
+        <div class="signature">
+
+            With all my heart,<br>
+
+            BUDDI ♥
+        </div>
+
+
+    </div>
+
+
+    <footer>
+
+        29.09.2025 → 29.09.2026
+
+        <br><br>
+
+        One year.
+        One story.
+        Two hearts.
+
+    </footer>
+
+
+</section>
+
+
+
+<script>
+
+/* =====================================================
+   OPEN STORY
+===================================================== */
+
+function openStory() {
+
+    const story =
+        document.getElementById("story");
+
+    story.style.display = "block";
+
+
+    const button =
+        document.querySelector(".open-btn");
+
+    button.style.display = "none";
+
+
+    setTimeout(function() {
+
+        story.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    }, 150);
+
+}
+
+</script>
+
+
+</body>
+
+</html>
